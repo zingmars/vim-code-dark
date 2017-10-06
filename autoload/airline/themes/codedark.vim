@@ -57,9 +57,9 @@ let s:Warning = [ s:cdRed.gui, s:cdDarkDark.gui, s:cdRed.cterm, s:cdDarkDark.cte
 " Normal:
 
 let s:N1 = [ s:cdFront.gui, s:cdBlue.gui, s:cdFront.cterm, s:cdBlue.cterm, 'none' ]
-let s:N2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
-let s:N3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
-let s:NM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
+let s:N2 = [ s:cdFront.gui, s:cdBlue.gui, s:cdFront.cterm, s:cdBlue.cterm, 'none' ]
+let s:N3 = [ s:cdFront.gui, s:cdBlue.gui, s:cdFront.cterm, s:cdBlue.cterm, 'none' ]
+let s:NM = [ s:cdFront.gui, s:cdBlue.gui, s:cdFront.cterm, s:cdBlue.cterm, 'none']
 
 let g:airline#themes#codedark#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 let g:airline#themes#codedark#palette.normal_modified = { 'airline_c': s:NM }
@@ -69,9 +69,9 @@ let g:airline#themes#codedark#palette.normal_modified.airline_warning = s:Warnin
 " Insert:
 
 let s:I1 = [ s:cdBack.gui, s:cdYellow.gui, s:cdBack.cterm, s:cdYellow.cterm, 'none' ]
-let s:I2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
-let s:I3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
-let s:IM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
+let s:I2 = [ s:cdFront.gui, s:cdYellow.gui, s:cdFront.cterm, s:cdYellow.cterm, 'none' ]
+let s:I3 = [ s:cdFront.gui, s:cdYellow.gui, s:cdFront.cterm, s:cdYellow.cterm, 'none' ]
+let s:IM = [ s:cdFront.gui, s:cdYellow.gui, s:cdFront.cterm, s:cdYellow.cterm, 'none']
 
 let g:airline#themes#codedark#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
 let g:airline#themes#codedark#palette.insert_modified = { 'airline_c': s:IM }
@@ -81,9 +81,9 @@ let g:airline#themes#codedark#palette.insert_modified.airline_warning = s:Warnin
 " Replace:
 
 let s:R1 = [ s:cdBack.gui, s:cdYellow.gui, s:cdBack.cterm, s:cdYellow.cterm, 'none' ]
-let s:R2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
-let s:R3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
-let s:RM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
+let s:R2 = [ s:cdFront.gui, s:cdYellow.gui, s:cdFront.cterm, s:cdYellow.cterm, 'none' ]
+let s:R3 = [ s:cdFront.gui, s:cdYellow.gui, s:cdFront.cterm, s:cdYellow.cterm, 'none' ]
+let s:RM = [ s:cdFront.gui, s:cdYellow.gui, s:cdFront.cterm, s:cdYellow.cterm, 'none']
 
 let g:airline#themes#codedark#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 let g:airline#themes#codedark#palette.replace_modified = { 'airline_c': s:RM }
@@ -93,9 +93,9 @@ let g:airline#themes#codedark#palette.replace_modified.airline_warning = s:Warni
 " Visual:
 
 let s:V1 = [ s:cdLightBlue.gui, s:cdDark.gui, s:cdLightBlue.cterm, s:cdDark.cterm, 'none' ]
-let s:V2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
-let s:V3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
-let s:VM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
+let s:V2 = [ s:cdFront.gui, s:cdDark.gui, s:cdLightBlue.cterm, s:cdDark.cterm, 'none' ]
+let s:V3 = [ s:cdFront.gui, s:cdDark.gui, s:cdLightBlue.cterm, s:cdDark.cterm, 'none' ]
+let s:VM = [ s:cdFront.gui, s:cdDark.gui, s:cdLightBlue.cterm, s:cdDark.cterm, 'none']
 
 let g:airline#themes#codedark#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 let g:airline#themes#codedark#palette.visual_modified = { 'airline_c': s:VM }
